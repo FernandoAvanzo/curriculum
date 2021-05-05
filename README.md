@@ -1,0 +1,2 @@
+# curriculum
+latex curriculum
