@@ -102,7 +102,7 @@
 \newlength\imagewidth
 \newlength\imagescale
 \renewcommand{\imsize}{0.618\linewidth}
-\pgfmathsetlength{\imagewidth}{5cm}%
+\pgfmathsetlength{\imagewidth}{3cm}%
 \pgfmathsetlength{\imagescale}{\imagewidth/600}%
 
 \newcommand{\profilesection}[2]{{\noindent\color{black!80} \huge #1 \rule[0.15\baselineskip]{#2}{1pt} \vspace{1pt}}}
@@ -112,7 +112,7 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\givennumberphone}{#1}}    % phone
 \newcommand{\cvaddress}[1]{\renewcommand{\givencvaddress}{#1}}          % address
 \newcommand{\cvsite}[1]{\renewcommand{\givencvsite}{#1}}                % site
-\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{  \justifying#1}} % about me
+\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{\justifying#1}} % about me
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}        % picture
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}                % name
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}        % job title
@@ -142,7 +142,7 @@
 % skill bar graphs
 \newcommand\skills[1]{
   \renewcommand{\givenskill}{
-    \noindent
+    \fontfamily{phv}\fontseries{n}\fontshape{sl}\selectfont\noindent
     \begin{tikzpicture}
     \foreach [count=\i] \x/\y in {#1}
     {
@@ -168,7 +168,7 @@
   \newcommand\skillstext[1]{
     \renewcommand{\giventextskill}{
     \begin{flushleft}
-    \noindent
+    \fontfamily{phv}\fontseries{n}\fontshape{sl}\selectfont\noindent
     \foreach [count=\i] \x/\y in {#1}
     {
       \x$ \star $\y
@@ -183,12 +183,12 @@
 {
   % grey bar on the left side
   \begin{tikzpicture}[remember picture,overlay]
-      \node [rectangle, fill=asidecolor, anchor=north, minimum width=9.90cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
+      \node [rectangle, fill=asidecolor, anchor=north, minimum width=9.90cm, minimum height=\paperheight+1cm] (box) at (-4cm,0.5cm){};
   \end{tikzpicture}
 
-  \begin{textblock}{6}(0.5, 0.2)
+  \begin{textblock}{7}(0.3, 0.2)
     \begin{flushleft}
-      \hspace{13pt}
+      \fontfamily{phv}\fontseries{n}\fontshape{sl}\selectfont\hspace{13pt}
 
       % profile picture
       \ifthenelse{\equal{\givenprofilepic}{}}{}{\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
@@ -220,7 +220,7 @@
       \end{tabular}
 
       % about me text
-      \profilesection{About me}{3.2cm}
+      \profilesection{About me}{3cm}
       \givenaboutme
 
       % skills with scale
@@ -258,9 +258,9 @@
 \renewcommand{\section}[1]{
   \par%
   {%
-    \LARGE 
+    \hspace{8\parskip}\fontfamily{phv}\fontseries{n}\fontshape{sl}\selectfont\LARGE 
     \color{headercolor}%
-    \@sectioncolor #1%
+    \@sectioncolor#1%
   }
   \par\vspace{\parskip}
 }
@@ -268,7 +268,7 @@
 \newcommand{\sectionicon}[2]{
   \par%
   {%
-    \LARGE 
+    \hspace{8\parskip}\LARGE 
     #1 
     \color{headercolor}%
     \@sectioncolor #2%
@@ -277,9 +277,10 @@
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
+  \par%
   {%
-  \large\color{headercolor} #1%
+  	\hspace{8\parskip}
+	\large\color{headercolor} #1%
   }
   \par\vspace{.25\parskip}%
 }
@@ -291,13 +292,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\tabcolsep}{0pt}
 \newenvironment{twenty}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth\hspace{8\parskip}}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitem}[4]{%
-  \hspace{5pt}#1&\parbox[t]{11.5cm}{%
+  \fontfamily{phv}\fontseries{n}\selectfont\fontshape{sl}\hspace{5pt}#1&\parbox[t]{11.5cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize#3}\\%
@@ -325,13 +326,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\tabcolsep}{0pt}
 \newenvironment{twentyshort}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth\hspace{8\parskip}}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitemshort}[2]{%
-  \hspace{5pt}#1&\parbox[t]{11.5cm}{%
+  	\fontfamily{phv}\fontseries{n}\selectfont\fontshape{sl}\hspace{5pt}#1&\parbox[t]{11.5cm}{%
     \textbf{#2}%
   }\\%
 }
