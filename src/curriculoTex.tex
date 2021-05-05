@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4\documentclass[options]{class}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{FotoCurriculo.jpg} % Profile picture
+
+\cvname{Fernando Avanzo} % Your name
+\cvjobtitle{Engenheiro de Software} % Job title/career
+
+\cvdate{01 Abril 1986} % Date of birth
+\cvaddress{Curitiba - Pr - Brasil} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+55 41987770603} % Phone number
+\cvsite{http://shorturl.at/aiyIW} % Personal website
+\cvmail{fernando.avanzo@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Fernando é um profissional apaixonado por tecnologia e ciência da computação. Compromissado em sempre fazer o melhor em seu oficio. Tem uma queda pelo autodidatismo, e sempre esta pronto a aprender. } % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Android/5.9},{Java/5.8},{Python/5.2},{TDD/4.8},{DevOps/4.2},{Cloud Services/3.9}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interesses}
+
+\small Desenvolvimento Mobile, Desenvolvimento Web, Computação em Nuvem, Analise e Projeto de Sistemas de Informação, Mineração de Dados, Inteligencia Artificial, Machine Learning e Redes Neurais.
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experiência}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2019}{Engenheiro de Software}{CINQ}{Atua no desenvolvimento de um aplicativo de conta digital onde o uso de cloud services será essencial para a construção de uma arquitetura robusta e escalonavel.}
+	\twentyitem{2018}{Desenvolvedor de sistemas}{Trade Technology}{Trabalhou no desenvolvimento de um sistema de otmização de linha de produção de bebidas, e em um sitema de abastecimento de facções de costura da industria textil. Ambos os sistemas baseados em modelos de inteligencia artificial, e machine learning, com toda sua infraestrutura construida através de cloud services}
+	\twentyitem{2017}{Desenvolvedor de sistemas mobile}{CINQ}{Fez parte da Equipe de sustentação do aplicativo mobile Chave na Mão Manobra da Rumo/ALL, que era responsavel pela manutenção do Aplicativo. Fazia parte da arquitetura do sistema os serviços Oracle MCS, (Mobile Cloud Service), que fornecia o backend do aplicativo.}
+	\twentyitem{2016}{Desenvolvedor de sistemas mobile}{Vertti TI}{Projetou e desenvolveu um aplicativo mobile para coleta de materia prima em laticinios, alem de um webservice que realizava a integração entre o app, e o sistema de ERP}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Projetos}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{2019}{Aplicativo de conta digital}
+	\twentyitemshort{2018}{Sistema de abastecimento de facções texteis.}
+	\twentyitemshort{2017}{Aplicativo Chave na Mão Manobra Rumo/All.}
+	\twentyitemshort{2016}{Aplicativo de coleta de matéria prima.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+%	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+--------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Educação}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2015}{Bacharel}{Universidade Estadual de Maringá}{Informatica}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Outras informações}
+
+\subsection{Apresentação}
+
+\small Frequentou a Universidade Estadual de Maringá, cursando bacharelado em Informática durante os anos de 2009 a 2015.  
+Entre 2011 a 2014 trabalhou como estagiário na Incubadora Tecnológica de Maringá na areá de desenvolvimento web e tecnologia da informação. 
+Durante o ano de 2014 ate o incio de 2016 atuou como programador de sistemas Android na Cerprosoft Informática LTDA, onde integrou a equipe de desenvolvimento do aplicativo android S.A.V - Sistema de Automação de Vendas. 
+A partir de Maio 2016 até Maio 2017 atuou como programador de sistemas Android pleno na Vertti Tecnologia de Informação onde desenvolveu um App mobile de coleta matéria-prima. Alem de um web service de integração de dados com o ERP proprietário da empresa. 
+A partir de junho de 2017 ate fevereiro de 2018 fez parte do time de desenvolvimento mobile na CINQ, onde trabalhou no projeto de sustentação de um aplicativo mobile de auxilio a maquinistas de locomotivas, e no sistema de gerenciamento de pátios da Rumo/ALL.
+Em Junho de 2018 até agosto de 2019 integrou a equipe da Cognitive Science, (antiga TWS), divisão do grupo Trade Technology especializado no desenvolvimento de sistemas cognitivos utilizando serviços em Cloud focados em Inteligencia Artificial. Sempre com o objetivo de oferecer soluções cognitivas personalizadas que visam otimizar setores chave na organização dos seus clientes afim de aprimorar processos e agregar valor ao negócio. A partir de agosto de 2019, retornou a CINQ, dessa vez como engenheiro de software responsável pelo projeto e implementação de um aplicativo de conta digital para uma operadora de cartões de credito.
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
